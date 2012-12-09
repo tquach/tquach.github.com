@@ -1,9 +1,14 @@
-body {
-    background: #eee url(../img/8.jpg) repeat repeat;
+.well {
+    color: #BFBFBF;
+    background: rgba( 0, 0, 0, 0.5);
 }
 
-header {
-    margin-bottom: 45px;
+body {
+  background: url(../img/toronto-beach-sunrise.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ul.icons {
@@ -12,11 +17,6 @@ ul.icons {
   margin: 0 0 10px 10px;
 }
 
-
-ul.icons > li {
-    float: left;
-    margin-right: 20px;
-}
 
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
