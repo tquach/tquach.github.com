@@ -1,0 +1,39 @@
+.bg-container {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  .bg-image {
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .layer {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .blur-bg {
+    background-image: url('../img/background.jpg');
+    +.layer {
+      background: rgba(0, 0, 0, .85);
+      background: -webkit-radial-gradient(circle, rgba(255, 255, 255, .02), rgba(0, 0, 0, .85)); /* Safari */
+      background: -o-radial-gradient(circle, rgba(255, 255, 255, .02), rgba(0, 0, 0, .85)); /* Opera 11.6 to 12.0 */
+      background: -moz-radial-gradient(circle, rgba(255, 255, 255, .02), rgba(0, 0, 0, .85)); /* Firefox 3.6 to 15 */
+      background: radial-gradient(circle, rgba(255, 255, 255, .02), rgba(0, 0, 0, .85)); /* Standard syntax */
+    }    
+  }
+
+  @include respond-to(mobile) {
+    position: fixed;
+  }
+}
+
